@@ -1,0 +1,37 @@
+html {
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.head {
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+header {
+  background-color: white;
+  height: 4rem;
+}
+
+.logo {
+  display: inline-flex;
+  height: 2rem;
+  align-items: center;
+}
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav span {
+  margin: 1rem;
+}
+
+.bold {
+  font-weight: bolder;
+}
