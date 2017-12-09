@@ -62,7 +62,7 @@ nav span {
 }
 
 .banner-text {
-  display: block;
+  flex-direction: column;
   margin: 0 5rem 0 1rem;
 }
 
@@ -75,6 +75,110 @@ nav span {
   background-color: #3f3f3f;
   color: white;
   font-size: 1rem;
-  width: 80%;
+  width: 85%;
   padding: 0.5rem 0 0.5rem 0;
+}
+
+/*Information Section*/
+.info-section {
+  display: inline-flex;
+}
+
+.left-col {
+  flex-direction: column;
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.left-col img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.left-content {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.left-content h1 {
+  padding-bottom: 1.5rem;
+}
+
+.right-col {
+  display: inline-flex;
+  flex-direction: column;
+  width: 35%;
+  padding-top: 1rem;
+}
+
+.item {
+  border: 1px solid #d3d3d3;
+}
+
+.img-container {
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.item img {
+  width: 35%;
+  height: 100%;
+  object-fit: contain;
+  margin: 1rem;
+}
+
+
+.item-text {
+  flex-direction: column;
+  align-self: center;
+  width: 65%;
+}
+
+.sack {
+  background-color: #d3d3d3;
+}
+
+.sack img {
+  width: 150%;
+  height: 150%;
+  position: relative;
+  left: -2rem;
+}
+
+.learn {
+  background-color: #d3d3d3;
+  width: 100%;
+}
+
+.learn h1 {
+  padding-top: 2rem;
+  text-align: center;
+}
+
+.courses {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 4.5rem 2rem 4.5rem;
+}
+
+.course {
+  flex-direction: column;
+  margin: 1rem;
+  width: 30%;
+}
+
+.course-text {
+  display: block;
+  padding: 1rem;
+  background-color: white;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
 }
