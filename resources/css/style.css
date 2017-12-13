@@ -1,15 +1,43 @@
 /*Universal Styles*/
+
 html {
+  font-family: "Noto Sans", sans-serif;
   font-size: 16px;
-  font-family: sans-serif;
   color: #3f3f3f;
 }
 
 h1 {
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: bolder;
   line-height: 115%;
   padding-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bolder;
+  line-height: 100%;
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  padding-top: 2rem;
+  text-align: center;
+  line-height: 100%;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: bolder;
+  line-height: 100%;
+  padding: 0.5rem 0;
+}
+
+p {
+  line-height: 125%;
+  padding-bottom: 0.5rem;
 }
 
 .flex {
@@ -49,13 +77,13 @@ nav span {
 
 /*Main Banner Section*/
 
-.banner {
+.container {
   display: inline-flex;
   align-items: center;
   background-color: #d3d3d3;
 }
 
-.banner img {
+.container img, video {
   width: 60%;
   object-fit: contain;
   margin: 2rem 1.5rem;
@@ -81,46 +109,45 @@ nav span {
 
 /*Information Section*/
 .info-section {
-  display: inline-flex;
+  background-color: white;
+  align-items: flex-start;
 }
 
 .left-col {
   flex-direction: column;
   width: 60%;
-  height: auto;
-  margin: 2rem 1.5rem;
+  margin-right: 3rem;
 }
 
-.left-col img {
+.left-col img, video {
   width: 100%;
   object-fit: contain;
+  margin: 2rem 1.5rem;
 }
 
 .left-content {
   width: 100%;
-  padding: 2rem 0;
-}
+  margin: 0 1.5rem 2rem 1.5rem;
 
-.left-content h1 {
-  padding-bottom: 1.5rem;
 }
 
 .right-col {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   width: 35%;
+  height: 100%;
   padding-top: 1rem;
+  border-left: 1px solid #d3d3d3;
 }
 
 .item {
-  border: 1px solid #d3d3d3;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #d3d3d3;
 }
 
-.img-container {
-  width: 35%;
-  height: 100%;
-  overflow: hidden;
-  margin: 1rem;
+.item div:hover {
+  background-color: #d3d3d3;
 }
 
 .item img {
@@ -130,40 +157,25 @@ nav span {
   margin: 1rem;
 }
 
-
 .item-text {
   flex-direction: column;
   align-self: center;
   width: 65%;
 }
 
-.sack {
-  background-color: #d3d3d3;
-}
-
-.sack img {
-  width: 150%;
-  height: 150%;
-  position: relative;
-  left: -2rem;
-}
 
 .learn {
   background-color: #d3d3d3;
   width: 100%;
 }
 
-.learn h1 {
-  padding-top: 2rem;
-  text-align: center;
-}
 
 .courses {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 2rem 4.5rem 2rem 4.5rem;
+  margin: 1rem 4.5rem 2rem 4.5rem;
 }
 
 .course {
@@ -176,9 +188,21 @@ nav span {
   display: block;
   padding: 1rem;
   background-color: white;
+  flex-shrink: 3;
 }
 
 .course img {
   width: 100%;
   height: auto;
+  flex-shrink: 3;
+}
+
+.course-text h6 {
+  padding: 0.5rem 0;
+}
+
+
+
+.thesis .container {
+  background-color: white;
 }
