@@ -132,7 +132,6 @@ nav span {
 }
 
 .right-col {
-  display: flex;
   flex-direction: column;
   width: 35%;
   height: 100%;
@@ -144,9 +143,10 @@ nav span {
   width: 100%;
   height: auto;
   border-bottom: 1px solid #d3d3d3;
+  background-color: white;
 }
 
-.item div:hover {
+div.item:hover {
   background-color: #d3d3d3;
 }
 
@@ -155,20 +155,21 @@ nav span {
   height: 100%;
   object-fit: contain;
   margin: 1rem;
+  background-color: transparent;
 }
 
 .item-text {
   flex-direction: column;
   align-self: center;
   width: 65%;
+  background-color: transparent;
 }
 
-
+/*Courses Section*/
 .learn {
   background-color: #d3d3d3;
   width: 100%;
 }
-
 
 .courses {
   display: inline-flex;
@@ -201,8 +202,31 @@ nav span {
   padding: 0.5rem 0;
 }
 
-
-
+/*Thesis Exhibit Section*/
 .thesis .container {
   background-color: white;
+  align-items: flex-start;
+}
+
+.exhibit {
+  border: none;
+}
+
+.exhibit .item {
+  border: none;
+}
+
+/*Footer Section*/
+footer {
+  border-top: 1px solid #d3d3d3;
+}
+
+.lockup {
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0 2rem 1.5rem;
+}
+
+.legal {
+  display: inline-block;
 }
