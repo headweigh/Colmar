@@ -48,10 +48,23 @@ p {
   font-weight: bolder;
 }
 
+.mobile {
+  display: none;
+}
+
 /*Header*/
 header {
   background-color: white;
   height: 4rem;
+}
+
+header a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+header a:hover {
+  font-weight: bold;
 }
 
 .head {
@@ -73,6 +86,19 @@ nav {
 
 nav span {
   margin: 1rem;
+}
+
+/*Mobile Header*/
+@media only screen and (max-width: 700px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile-head {
+    justify-content: space-around;
+    margin: 2.25rem 0;
+  }
+
 }
 
 /*Main Banner Section*/
@@ -105,7 +131,48 @@ nav span {
   font-size: 1rem;
   width: 85%;
   padding: 0.5rem 0 0.5rem 0;
+  transition-property: color
 }
+
+/*Mobile Banner*/
+@media only screen and (max-width: 748px) {
+  .container {
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #d3d3d3;
+  }
+
+  .container img, video {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  .banner-text {
+    flex-direction: column;
+    margin: 0 1rem 2.5rem 1rem;
+  }
+
+  .banner p {
+    line-height: 120%;
+    padding-bottom: 1.5rem;
+  }
+
+  .banner h1 {
+    padding: 2rem 0;
+  }
+}
+
+button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.banner-text button:active {
+  background-color: #AEB6BF;
+}
+
 
 /*Information Section*/
 .info-section {
@@ -165,6 +232,63 @@ div.item:hover {
   background-color: transparent;
 }
 
+.item-text a {
+  text-decoration: none;
+  color: #336EFF;
+}
+
+.mobile-info {
+  display: none;
+}
+
+/*Mobile Information Section*/
+@media only screen and (max-width: 748px) {
+  .info-section .left-col {
+    display: none;
+  }
+
+  .desktop-info {
+    display: none;
+  }
+
+  .mobile-info {
+    display: flex;
+  }
+
+  .info-section {
+    width: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+    padding: 0;
+    border: 0;
+  }
+
+  .item {
+    display: block;
+    margin: auto;
+    border: 0;
+  }
+
+  .item img {
+    width: 95%;
+    margin: 1rem;
+  }
+
+  .item-text {
+    align-items: baseline;
+    width: 100%;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  div.item:hover {
+    background-color: white;
+  }
+
+}
+
 /*Courses Section*/
 .learn {
   background-color: #d3d3d3;
@@ -202,6 +326,43 @@ div.item:hover {
   padding: 0.5rem 0;
 }
 
+.mobile-course {
+  display: none;
+}
+
+/*Mobile Course Section*/
+@media only screen and (max-width: 748px) {
+  .desktop-course {
+    display: none;
+  }
+
+  .learn {
+    background-color: white;
+    border-top: 1px solid #d3d3d3;
+  }
+
+  .learn h3 {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .mobile-course {
+    display: block;
+    background-color: #d3d3d3;
+    margin: 0.5rem;
+  }
+
+  .mobile-course h4 {
+    padding: 1.5rem;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: none;
+    justify-content: space-between;
+    margin: 0.5rem;
+  }
+}
 /*Thesis Exhibit Section*/
 .thesis .container {
   background-color: white;
@@ -216,6 +377,8 @@ div.item:hover {
   border: none;
 }
 
+
+
 /*Footer Section*/
 footer {
   border-top: 1px solid #d3d3d3;
@@ -224,7 +387,7 @@ footer {
 .lockup {
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0 2rem 1.5rem;
+  margin: 1rem 1.5rem 2rem 1.5rem;
 }
 
 .legal {
